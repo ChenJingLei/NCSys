@@ -1,0 +1,214 @@
+﻿@model IEnumerable<NCSys.Models.CUST>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LoginPartial.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INDUSTRY_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_LOCATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PARENT_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_CODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EFF_DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EXP_DATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PASSWD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_CATEGORY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AGREEMENT_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IS_VIP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LATN_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IMP_CUST_TYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_CLASS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_TYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CHARGE_PROVINCE_CODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CHARGE_LATN_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_SUB_BRAND)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_BRAND)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_SERVD_LEVEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SALE_ORGANIZE_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COUNTY_TYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MANAGE_LEVEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GRID_CODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NEW_CUST_TYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AREA_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MANAGE_CUST_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GROUP_GRADE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CUST_TYPE_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REGION_SALE_CODE)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_NAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INDUSTRY_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_LOCATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PARENT_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_CODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EFF_DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EXP_DATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PASSWD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_CATEGORY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AGREEMENT_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IS_VIP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LATN_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IMP_CUST_TYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_CLASS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_TYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CHARGE_PROVINCE_CODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CHARGE_LATN_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_SUB_BRAND)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_BRAND)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_SERVD_LEVEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SALE_ORGANIZE_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COUNTY_TYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MANAGE_LEVEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GRID_CODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NEW_CUST_TYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AREA_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MANAGE_CUST_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GROUP_GRADE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUST_TYPE_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REGION_SALE_CODE)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CUST_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CUST_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CUST_ID })
+        </td>
+    </tr>
+}
+
+</table>

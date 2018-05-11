@@ -1,0 +1,273 @@
+﻿@model NCSys.Models.CUST
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LoginPartial.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CUST</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INDUSTRY_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INDUSTRY_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_LOCATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_LOCATION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PARENT_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PARENT_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_CODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_CODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EFF_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EFF_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EXP_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EXP_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PASSWD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PASSWD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_CATEGORY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_CATEGORY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AGREEMENT_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AGREEMENT_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IS_VIP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IS_VIP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LATN_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LATN_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMP_CUST_TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMP_CUST_TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_CLASS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_CLASS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CHARGE_PROVINCE_CODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CHARGE_PROVINCE_CODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CHARGE_LATN_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CHARGE_LATN_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_SUB_BRAND)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_SUB_BRAND)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_BRAND)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_BRAND)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_SERVD_LEVEL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_SERVD_LEVEL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SALE_ORGANIZE_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SALE_ORGANIZE_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COUNTY_TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COUNTY_TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MANAGE_LEVEL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MANAGE_LEVEL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GRID_CODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GRID_CODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NEW_CUST_TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NEW_CUST_TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AREA_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AREA_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MANAGE_CUST_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MANAGE_CUST_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GROUP_GRADE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GROUP_GRADE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUST_TYPE_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUST_TYPE_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REGION_SALE_CODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REGION_SALE_CODE)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
